@@ -8,9 +8,6 @@
 <script>
     export default {
         name: "Footer",
-        data: () => ({
-            isActive: false,
-        }),
         methods: {
             showAbout: function() {
                 let aboutWindow = document.getElementById('about');
@@ -34,7 +31,7 @@
     .sup-footer-text {
         color: white;
         font-family: "Montserrat Regular";
-        font-size: 1em;
+        font-size: 0.9em;
         letter-spacing: 0.01em;
     }
 

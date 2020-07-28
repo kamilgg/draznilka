@@ -2,8 +2,10 @@
     <div class="header-logo">
         <div class="sup-text" id="left-sup-text">ДАВАЙ, ПОДРАЗНИ</div>
         <div id="main-logo">
-            <img id="main-pic" src="../assets/icons/MaskGroup.png">
-            <div class="main-text" id="main-text">ДРАЗНИЛКА</div>
+            <a href="/">
+                <img id="main-pic" src="../assets/icons/MaskGroup.png">
+                <div class="main-text glitch" id="main-text">ДРАЗНИЛКА</div>
+            </a>
         </div>
         <div class="sup-text" id="right-sup-text">КАК В ДЕТСТВЕ</div>
     </div>
@@ -41,11 +43,11 @@
     .sup-text {
       font-family: Montserrat Regular;
       color: white;
-      font-size: 1.2em;
+      font-size: 0.9em;
     }
     .header-logo {
         position: fixed;
-        top: 0;
+        top: 20px;
         left: 0;
         width: 100%;
         height: 170px;
@@ -135,17 +137,17 @@
         .sup-text {
           font-family: Montserrat Regular;
           color: white;
-          font-size: 0.5em;
+          font-size: 0.6em;
         }
 
         #left-sup-text {
             position: absolute;
-            left: 5%;
+            left: 8%;
             top: 25px;
         }
         #right-sup-text {
             position: absolute;
-            right: 5%;
+            right: 8%;
             top: 25px;
         }
         #main-pic {
@@ -163,3 +165,59 @@
         }
     }
 </style>
+
+<!--<style lang="sass">-->
+<!--    .glitch {-->
+<!--      color: white;-->
+<!--      font-size: 100px;-->
+<!--      position: relative;-->
+<!--      width: 400px;-->
+<!--      margin: 0 auto;-->
+<!--    }-->
+
+<!--    @keyframes noise-anim {-->
+<!--      $steps: 20;-->
+<!--      @for $i from 0 through $steps {-->
+<!--        #{percentage($i*(1/$steps))} {-->
+<!--          $top: random(100);-->
+<!--          $bottom: random(101 - $top);-->
+<!--          clip-path: inset(#{$top}% 0 #{$bottom}%  0);-->
+<!--        }-->
+<!--      }-->
+<!--    }-->
+
+<!--    .glitch::after {-->
+<!--      content: attr(data-text);-->
+<!--      position: absolute;-->
+<!--      left: 2px;-->
+<!--      text-shadow: -1px 0 red;-->
+<!--      top: 0;-->
+<!--      color: white;-->
+<!--      background: black;-->
+<!--      overflow: hidden;-->
+<!--      animation: noise-anim 2s infinite linear alternate-reverse;-->
+<!--    }-->
+
+<!--    @keyframes noise-anim-2 {-->
+<!--      $steps: 20;-->
+<!--      @for $i from 0 through $steps {-->
+<!--        #{percentage($i*(1/$steps))} {-->
+<!--          $top: random(100);-->
+<!--          $bottom: random(101 - $top);-->
+<!--          clip-path: inset(#{$top}% 0 #{$bottom}%  0);-->
+<!--        }-->
+<!--      }-->
+<!--    }-->
+
+<!--    .glitch::before {-->
+<!--      content: attr(data-text);-->
+<!--      position: absolute;-->
+<!--      left: -2px;-->
+<!--      text-shadow: 1px 0 blue;-->
+<!--      top: 0;-->
+<!--      color: white;-->
+<!--      background: black;-->
+<!--      overflow: hidden;-->
+<!--      animation: noise-anim-2 15s infinite linear alternate-reverse;-->
+<!--    }-->
+<!--</style>-->

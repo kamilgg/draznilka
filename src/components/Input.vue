@@ -39,9 +39,14 @@
             },
             copyTease: function() {
                 let copyText = document.getElementById('text-output');
+                let copySpan = document.getElementById('copy-span');
                 copyText.select();
                 copyText.setSelectionRange(0, 99999);
                 document.execCommand("copy");
+                copySpan.innerText = 'СКОПИРОВАНО'
+                setTimeout(function () {
+                    copySpan.innerText = 'СКОПИРОВАТЬ'
+                }, 1000);
             }
           }
     }
@@ -55,15 +60,15 @@
         background-color: #000;
         border-width: 1px;
         border-style: solid;
-        border-color: #fff3;
+        border-color: #fff2;
         font-family: Montserrat Regular;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 160%;
         /*border-image: linear-gradient(27deg, rgba(90,37,95,1) 3%, rgba(116,56,255,1) 73%, rgba(255,135,129,1) 99%);*/
         /*border-image-slice: 1;*/
-        color: #fff4;
+        color: #fff6;
         resize: none;
         padding: 40px;
     }
@@ -89,7 +94,7 @@
         font-weight: 600;
         letter-spacing: 0.14em;
         background: white;
-        transition: all .15s;
+        transition: all .3s;
         text-align: center;
         position: relative;
     }
@@ -105,7 +110,7 @@
         width: 0;
         height: 100%;
         background: linear-gradient(27deg, rgba(255,135,129,1) 1%, rgba(116,56,255,1) 53%, rgba(90,37,95,1) 93%);
-        transition: all .15s;
+        transition: all .3s;
     }
     .btn:hover {
         color: white;
@@ -119,6 +124,10 @@
         left: 23%;
         top: 30%;
     }
+    .text-input:focus {
+        border-color: #fff4;
+        color: #fff;
+    }
     .copy-wrap {
         z-index: 2;
         width: calc(50% + 80px);
@@ -131,6 +140,7 @@
         z-index: 1;
         width: 100%;
         overflow: hidden;
+        color: #fff;
     }
     .copy-span {
         display: none;
@@ -142,6 +152,7 @@
         height: 90px;
         padding-top: 70px;
         color: white;
+        letter-spacing: 0.14em;
         background-color: rgba(255, 255, 255, .2);
         cursor: pointer;
     }
@@ -174,19 +185,19 @@
             height: 50px;
         }
         #text-input {
-            position: absolute;
+            position: fixed;
             left: 8%;
             top: 30%;
         }
         #text-output {
-            position: absolute;
+            position: fixed;
             left: 8%;
             top: 65%;
             width: 63%;
             height: 50px;
         }
         .copy-wrap {
-            position: absolute;
+            position: fixed;
             left: 8%;
             top: 65%;
             width: calc(63% + 80px);
@@ -199,6 +210,7 @@
             background-color: rgba(135, 135, 135, .8);
         }
         .btn-wrap {
+            position: fixed;
             top: 53%;
         }
         .btn {

@@ -1,5 +1,5 @@
 <template>
-    <div v-show="true" class="about" id="about">
+    <div class="about" id="about">
         <a target="_blank" rel="noopener noreferrer" href="https://davaypodrazni.ru/">Проект</a> — бесполезный.
         <br>
         <a target="_blank" rel="noopener noreferrer" href="https://vk.com/kamilgg">Автор</a> — дурак.
