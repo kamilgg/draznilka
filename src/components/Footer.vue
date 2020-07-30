@@ -30,7 +30,7 @@
     }
     .sup-footer-text {
         color: white;
-        font-family: "Montserrat Regular";
+        font-family: Montserrat;
         font-size: 0.9em;
         letter-spacing: 0.01em;
     }

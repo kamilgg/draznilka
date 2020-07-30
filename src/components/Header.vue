@@ -3,7 +3,7 @@
         <div class="sup-text" id="left-sup-text">ДАВАЙ, ПОДРАЗНИ</div>
         <div id="main-logo">
             <a href="/">
-                <img id="main-pic" src="../assets/icons/MaskGroup.png">
+                <img id="main-pic" src="../assets/icons/MaskGroup.webp">
                 <div class="main-text glitch" id="main-text">ДРАЗНИЛКА</div>
             </a>
         </div>
@@ -19,16 +19,12 @@
 
 <style scoped>
     @font-face {
-        font-family: "Lobster Regular";
-        src: url("../assets/fonts/Lobster-Regular.ttf") format("woff2");
-    }
-    @font-face {
         font-family: "Misto";
         src: url("../assets/fonts/misto.ttf") format("woff2");
     }
     @font-face {
-        font-family: "Montserrat Regular";
-        src: url("../assets/fonts/Montserrat-Regular.ttf") format("woff2");
+        font-family: "Montserrat";
+        src: url("../assets/fonts/montserrat.ttf") format("woff2");
     }
     .main-text {
         font-family: Misto;
@@ -41,7 +37,7 @@
         text-transform: uppercase;
     }
     .sup-text {
-        font-family: Montserrat Regular;
+        font-family: Montserrat;
         color: white;
         font-size: 0.9em;
     }
@@ -93,7 +89,7 @@
             text-transform: uppercase;
         }
         .sup-text {
-          font-family: Montserrat Regular;
+          font-family: Montserrat;
           color: white;
           font-size: 1em;
         }
@@ -134,7 +130,7 @@
             text-transform: uppercase;
         }
         .sup-text {
-          font-family: Montserrat Regular;
+          font-family: Montserrat;
           color: white;
           font-size: 0.6em;
         }

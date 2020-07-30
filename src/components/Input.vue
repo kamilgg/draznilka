@@ -61,7 +61,7 @@
         border-width: 1px;
         border-style: solid;
         border-color: #fff2;
-        font-family: Montserrat Regular;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -89,7 +89,7 @@
         border: none;
         outline: none;
         color: black;
-        font-family: 'Montserrat Regular';
+        font-family: Montserrat;
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 0.14em;
@@ -144,7 +144,7 @@
     }
     .copy-span {
         display: none;
-        font-family: Montserrat Regular;
+        font-family: Montserrat;
         z-index: 3;
         position: absolute;
         left: 0;
