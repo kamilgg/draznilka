@@ -183,21 +183,22 @@
         textarea {
             width: 63%;
             height: 50px;
+            font-size: 13px;
         }
         #text-input {
-            position: fixed;
+            position: absolute;
             left: 8%;
             top: 30%;
         }
         #text-output {
-            position: fixed;
+            position: absolute;
             left: 8%;
             top: 65%;
             width: 63%;
             height: 50px;
         }
         .copy-wrap {
-            position: fixed;
+            position: absolute;
             left: 8%;
             top: 65%;
             width: calc(63% + 80px);
@@ -210,12 +211,13 @@
             background-color: rgba(135, 135, 135, .8);
         }
         .btn-wrap {
-            position: fixed;
-            top: 53%;
+            position: absolute;
+            top: 54%;
         }
         .btn {
-            width: 180px;
-            height: 40px;
+            font-size: 11px;
+            width: 21em;
+            height: 4em;
             letter-spacing: 0.12em;
         }
     }

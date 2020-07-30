@@ -41,12 +41,12 @@
         text-transform: uppercase;
     }
     .sup-text {
-      font-family: Montserrat Regular;
-      color: white;
-      font-size: 0.9em;
+        font-family: Montserrat Regular;
+        color: white;
+        font-size: 0.9em;
     }
     .header-logo {
-        position: fixed;
+        position: absolute;
         top: 20px;
         left: 0;
         width: 100%;
@@ -54,7 +54,6 @@
         padding-top: 30px;
         padding-bottom: 10px;
     }
-
 
     #left-sup-text {
         position: absolute;
@@ -153,71 +152,15 @@
         #main-pic {
             position: absolute;
             z-index: 1;
-            left: 35%;
+            left: 30%;
             top: 25px;
             width: 40%;
         }
         #main-text {
             position: absolute;
             z-index: 2;
-            left: 30%;
+            left: 26%;
             top: 30px;
         }
     }
 </style>
-
-<!--<style lang="sass">-->
-<!--    .glitch {-->
-<!--      color: white;-->
-<!--      font-size: 100px;-->
-<!--      position: relative;-->
-<!--      width: 400px;-->
-<!--      margin: 0 auto;-->
-<!--    }-->
-
-<!--    @keyframes noise-anim {-->
-<!--      $steps: 20;-->
-<!--      @for $i from 0 through $steps {-->
-<!--        #{percentage($i*(1/$steps))} {-->
-<!--          $top: random(100);-->
-<!--          $bottom: random(101 - $top);-->
-<!--          clip-path: inset(#{$top}% 0 #{$bottom}%  0);-->
-<!--        }-->
-<!--      }-->
-<!--    }-->
-
-<!--    .glitch::after {-->
-<!--      content: attr(data-text);-->
-<!--      position: absolute;-->
-<!--      left: 2px;-->
-<!--      text-shadow: -1px 0 red;-->
-<!--      top: 0;-->
-<!--      color: white;-->
-<!--      background: black;-->
-<!--      overflow: hidden;-->
-<!--      animation: noise-anim 2s infinite linear alternate-reverse;-->
-<!--    }-->
-
-<!--    @keyframes noise-anim-2 {-->
-<!--      $steps: 20;-->
-<!--      @for $i from 0 through $steps {-->
-<!--        #{percentage($i*(1/$steps))} {-->
-<!--          $top: random(100);-->
-<!--          $bottom: random(101 - $top);-->
-<!--          clip-path: inset(#{$top}% 0 #{$bottom}%  0);-->
-<!--        }-->
-<!--      }-->
-<!--    }-->
-
-<!--    .glitch::before {-->
-<!--      content: attr(data-text);-->
-<!--      position: absolute;-->
-<!--      left: -2px;-->
-<!--      text-shadow: 1px 0 blue;-->
-<!--      top: 0;-->
-<!--      color: white;-->
-<!--      background: black;-->
-<!--      overflow: hidden;-->
-<!--      animation: noise-anim-2 15s infinite linear alternate-reverse;-->
-<!--    }-->
-<!--</style>-->
