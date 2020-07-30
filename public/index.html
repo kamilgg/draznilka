@@ -15,8 +15,8 @@
     </script>
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link href="<%= BASE_URL %>webclip.png" rel="apple-touch-icon">
-    <link rel="preload" href="/src/assets/fonts/misto.ttf" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/src/assets/fonts/montserrat.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="<%= require('@/assets/fonts/misto.ttf') %>" as="font" crossorigin>
+    <link rel="preload" href="<%= require('@/assets/fonts/montserrat.ttf') %>" as="font" crossorigin>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Давай, подразни!</title>

@@ -19,10 +19,6 @@
 
 <style scoped>
     @font-face {
-        font-family: "Misto";
-        src: url("../assets/fonts/misto.ttf") format("woff2");
-    }
-    @font-face {
         font-family: "Montserrat";
         src: url("../assets/fonts/montserrat.ttf") format("woff2");
     }
