@@ -2,7 +2,7 @@
     <div class="inputs">
         <textarea class="text-input" id="text-input" type="text" placeholder="Тут фраза, которую нужно передразнить"/>
         <div class="btn-wrap">
-            <button class="btn" v-on:click="tease"><span>ПОДРАЗНИТЬ</span></button>
+            <button class="btn" v-on:click="tease"><span>подразнить</span></button>
         </div>
         <textarea class="text-output" id="text-output" type="text" readonly="true" placeholder="Тють фрязя, катёрёй мёжнё перидрязнить"/>
         <div class="copy-wrap" @click="copyTease">
@@ -83,20 +83,21 @@
         transform: translate(-50%, -50%);
     }
     .btn {
-        cursor: pointer;
+        position: relative;
         width: 300px;
         height: 60px;
         border: none;
         outline: none;
+        cursor: pointer;
+        background: white;
         color: black;
         font-family: Montserrat;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 600;
-        letter-spacing: 0.14em;
-        background: white;
-        transition: all .3s;
+        letter-spacing: 0.12em;
         text-align: center;
-        position: relative;
+        text-transform: uppercase;
+        transition: all .3s;
     }
     .btn span {
         position: relative;
