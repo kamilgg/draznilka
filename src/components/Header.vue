@@ -4,7 +4,7 @@
         <div id="main-logo">
             <a href="/">
                 <img id="main-pic" src="../assets/icons/MaskGroup.webp">
-                <div class="main-text glitch" id="main-text">ДРАЗНИЛКА</div>
+                <div class="main-text" id="main-text">ДРАЗНИЛКА</div>
             </a>
         </div>
         <div class="sup-text" id="right-sup-text">КАК В ДЕТСТВЕ</div>
@@ -21,6 +21,10 @@
     @font-face {
         font-family: "Montserrat";
         src: url("../assets/fonts/montserrat.ttf") format("woff2");
+    }
+    @font-face {
+        font-family: "Misto";
+        src: url("../assets/fonts/misto.ttf") format("woff2");
     }
     .main-text {
         font-family: Misto;

@@ -32,7 +32,9 @@
                     //у
                 .replace(/(?!\s)у(?!\s)/g, 'ю')
                     //ы
-                .replace(/(?=.)ы(?=.)/g, 'и');
+                .replace(/(?=.)ы(?=.)/g, 'и')
+                    //в
+                .replace(/(?=.)в(?=е)/g, 'вь');
 
 
                 output.value = inputText;
@@ -55,8 +57,8 @@
 <style scoped>
     textarea {
         display: block;
-        width: 50%;
-        height: 80px;
+        width: 40%;
+        height: 60px;
         background-color: #000;
         border-width: 1px;
         border-style: solid;
@@ -122,7 +124,7 @@
 
     #text-input {
         position: absolute;
-        left: 23%;
+        left: 27%;
         top: 30%;
     }
     .text-input:focus {
@@ -131,10 +133,10 @@
     }
     .copy-wrap {
         z-index: 2;
-        width: calc(50% + 80px);
-        height: 160px;
+        width: calc(40% + 80px);
+        height: 140px;
         position: absolute;
-        left: 23%;
+        left: 27%;
         top: 70%;
     }
     #text-output {
@@ -150,7 +152,7 @@
         position: absolute;
         left: 0;
         width: 100%;
-        height: 90px;
+        height: 70px;
         padding-top: 70px;
         color: white;
         letter-spacing: 0.14em;
@@ -161,10 +163,10 @@
         display: block;
     }
     #text-output {
-        width: 50%;
-        height: 80px;
+        width: 40%;
+        height: 60px;
         position: absolute;
-        left: 23%;
+        left: 27%;
         top: 70%;
     }
     #text-output:hover {
